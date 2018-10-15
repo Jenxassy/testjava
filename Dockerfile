@@ -1,4 +1,4 @@
-from java:8u111-jre
+from maven:3.5-jdk-8-slim
 workdir testA
 mvn package
 workdir testA/target
