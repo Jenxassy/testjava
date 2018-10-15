@@ -1,0 +1,1 @@
+keytool -genkeypair -alias serverkey -keypass password -storepass secret -dname "C=CN,ST=GD,L=SZ,O=vihoo,OU=dev,CN=vihoo.com" -keyalg RSA -keysize 2048 -validity 3650 -keystore server.keystore
