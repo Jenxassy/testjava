@@ -29,63 +29,10 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- Jpa组件 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		
-
-		<!-- Spring Security OATH -->		
-		<dependency>
-			<groupId>org.springframework.security.oauth</groupId>
-			<artifactId>spring-security-oauth2</artifactId>
-			<version>2.3.0.RELEASE</version>
-		</dependency>
-   
-         <!-- 将token存储在redis中 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
- 
- 		<dependency>
-	      <groupId>redis.clients</groupId>
-	      <artifactId>jedis</artifactId>
-	    </dependency>
- 
- 
- 		<!-- 日志记录 -->
-		<dependency>
-			<groupId>com.googlecode.log4jdbc</groupId>
-			<artifactId>log4jdbc</artifactId>
-			<version>1.2</version>
-		</dependency>
-		
-		<!-- 数据库驱动 -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>6.0.6</version>
-		</dependency>
-		
-		
-		<dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.5</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
 
 	</dependencies>
 	
-		
-	<build>
+		<build>
 		<finalName>${project.artifactId}</finalName>
 		<resources>
 			<resource>
