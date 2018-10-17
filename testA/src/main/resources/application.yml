@@ -3,19 +3,6 @@ server:
   session:
    cookie:
       name: UISESSION
-spring:
-  datasource:
-    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-    username: test
-    password: pa55w()rd
-    driver-class-name: net.sf.log4jdbc.DriverSpy
-  redis:
-    host: 192.168.1.4
-    database: 3
-    password: grape
-  jpa:
-    hibernate:
-       ddl-auto: none
 logging:
   level:
     jdbc: error
@@ -23,14 +10,3 @@ logging:
     org.springframework.security: DEBUG
     org.springframework.web: DEBUG
     
-https:
-  port: 8443
-  ssl:
-    key-store: classpath:server.keystore
-    key-store-password: secret
-    key-password: password    
-
-wxapp:
-  appid: wx60aff903e9667f53
-  secret: e5e51b1fe0d884ef90a5d64ae3325dc0
-
